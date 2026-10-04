@@ -1,0 +1,349 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Renders Engineering Consultant</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f5f7fa;
+            color: #222;
+        }
+
+        header {
+            background: #0b2d5c;
+            color: white;
+            padding: 20px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            width: 150px;
+            height: auto;
+        }
+        .logo-text {
+            font-size: 50px;
+            font-weight: bold;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 30px; 
+        }
+
+        .hero {
+            min-height: 400px;
+            display: flex;
+            align-items: center;
+            padding: 40px 8%;
+            background: white;
+        }
+
+        .hero-content {
+            max-width: 800px;
+        }
+
+        .hero h1 {
+            font-size: 42px;
+            color: #0b2d5c;
+            margin-bottom: 15px;
+        }
+
+        .hero p {
+            font-size: 20px;
+            line-height: 1.6;
+            color: #555;
+        }
+
+        .button {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 14px 25px;
+            background: #0878d1;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+.about {
+    padding: 60px 8%;
+    text-align: center;
+}
+
+.about h2 {
+    font-size: 36px;
+    color: #0b2d5c;
+    margin-bottom: 20px;
+}
+
+.about p {
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 18px;
+    line-height: 1.6;
+    color: #555;
+}
+        .services {
+            padding: 60px 8%;
+            text-align: center;
+        }
+
+        .services h2 {
+            color: #0b2d5c;
+            font-size: 35px;
+        }
+
+        .service-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin-top: 30px;
+        }
+
+        .service {
+            background: white;
+            width: 280px;
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+        }
+        .service:hover {transform: translateY(-5px);transition: 0.3s;}
+
+        .service h3 {
+            color: #0878d1;
+        }
+        
+
+/* Projects */
+.projects {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 60px 8%;
+    text-align: center;
+    min-height: 300px;
+    overflow: hidden;
+}
+
+.projects h2 {
+    font-size: 36px;
+    color: #0b2d5c;
+    margin-bottom: 30px;
+}
+
+.projects-container {
+    width: 100%;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 20px;
+}
+
+  .project {
+    background: white;
+    width: 100%;
+    min-width: 0;
+    padding: 25px;
+    box-sizing: border-box;
+    border-radius: 8px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}  
+
+.project h3 {
+    color: #0b2d5c;
+    margin-bottom: 10px;
+}
+
+.project p {
+    color: #555;
+    line-height: 1.6;
+}
+
+        footer {
+            background: #0b2d5c;
+            color: white;
+            text-align: center;
+            padding: 25px;
+        }
+     /* Fix section overlapping */
+.about,
+.services,
+.projects,
+.contact {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: auto;
+    min-height: 0;
+    clear: both;
+    overflow: visible;
+    box-sizing: border-box;
+    margin-bottom: 50px;
+}
+
+.service-container,
+.projects-container {
+    position: relative;
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+}
+
+.service,
+.project {
+    position: relative;
+    box-sizing: border-box;
+}   
+    </style>
+</head>
+
+<body>
+
+    <header>
+    <img src="renders-logo.jpeg"
+         alt="Renders Engineering Consultant Logo" class="logo">
+
+        <nav>
+            <a href="#">Home</a>
+            <a href="#About">about</a>
+            <a href="#services">services</a>
+            <a href="#projects">projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+
+        <div class="hero-content">
+
+            <h1>Renders Engineering Consultant</h1>
+
+            <p>
+                Professional engineering solutions for electrical,
+                solar, security, power and building systems.
+            </p>
+
+            <a href="#" class="button">
+                Request a Consultation
+            </a>
+
+        </div>
+    </section>
+<section class="about" id="About">
+    <h2>About Us</h2>
+
+    <p>
+        Renders Engineering Consultant provides professional engineering,
+        electrical, solar power and security system solutions for residential
+        and commercial clients.
+    </p>
+
+</section>
+
+
+<section class="services"id="services">
+    <h3>Our Services</h3>
+
+    <div class="service-container">
+
+        <div class="service">
+            <h3>Electrical Installation</h3>
+            <p>Professional electrical installation and maintenance services.</p>
+        </div>
+
+        <div class="service">
+            <h3>Solar Power Systems</h3>
+            <p>Design and installation of reliable solar power and backup energy systems.</p>
+        </div>
+
+        <div class="service">
+            <h3>CCTV & Security Systems</h3>
+            <p>CCTV, access control and remote monitoring solutions.</p>
+        </div>
+
+        <div class="service">
+            <h3>Power Solutions</h3>
+            <p>UPS, backup power, earthing and lightning protection solutions.</p>
+        </div>
+
+    </div>
+</section>
+
+    </section>
+   <section id="projects" class="projects">
+    <h2>Our Projects</h2>
+
+    <div class="projects-container">
+
+        <div class="project">
+            <h3>Electrical Installation</h3>
+            <p>Professional electrical installation and maintenance services for residential and commercial buildings.</p>
+        </div>
+
+        <div class="project">
+            <h3>Solar Power Systems</h3>
+            <p>Design and installation of reliable solar power and backup energy systems.</p>
+        </div>
+
+        <div class="project">
+            <h3>CCTV & Security Systems</h3>
+            <p>Installation of CCTV, access control and other security systems.</p>
+        </div>
+
+    </div>
+</section>
+<section id="contact" class="contact">
+  <div class="container">
+    <h2>Contact Us</h2>
+    <p>Get in touch with us for professional electrical, solar, CCTV and technical solutions.</p>
+
+    <div class="contact-info">
+      <p><strong>Phone:</strong><a href="tel:0787123412">0787 123 412</a></p>
+      <p><strong>Email:</strong><a href="mailto:eliaspapakol@gmail.com">eliaspapakol@gmail.com</a>/p>
+      <p><strong>Location:</strong> Kampala, Uganda</p>
+    </div>
+
+<form action="https://formsubmit.co/eliaspapakol@gmail.com" method="POST">
+    <input type="hidden" name="_subject" value="New enquiry from Renders Engineering Website">
+<input type="hidden" name="_captcha" value="false">
+  <input type="text" id="name" placeholder="Your Name" required>
+  <input type="email" id="email" placeholder="Your Email" required>
+  <input type="tel" id="phone" placeholder="Your Phone" required>
+  <textarea id="message" placeholder="Your Message" rows="5" required></textarea>
+  <button type="submit">Send Message</button> 
+    </form>
+  </div>
+</section>
+    <footer>
+
+        <p>© 2026 Renders Engineering Consultant. All Rights Reserved.</p>
+    </footer>
+<script>
+function sendToWhatsApp() {
+  var name = document.getElementById("name").value;
+  var email = document.getElementById("email").value;
+  var phone = document.getElementById("phone").value;
+  var message = document.getElementById("message").value;
+
+  if (name === "" || email === "" || phone === "" || message === "") {
+    alert("Please fill in all the fields.");
+    return;
+  }
+
+  var text = "Hello, I would like to make an inquiry.%0A%0A" +
+             "Name: " + name + "%0A" +
+             "Email: " + email + "%0A" +
+             "Phone: " + phone + "%0A" +
+             "Message: " + message;
+
+window.open("https://wa.me/256787123412?text=" + encodeURIComponent(text), "_blank");
+</script>
+</body>
+</html>
